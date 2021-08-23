@@ -70,7 +70,7 @@ ap.post("/uploadresume",function (req, res, next) {
 		} 
 		else { 
 
-			res.sendFile(__dirname+"loading.gif") 
+			res.sendFile(__filename+"loading.gif") 
 		} 
 	}) 
 }) 
