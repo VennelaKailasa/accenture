@@ -43,7 +43,7 @@ var upload = multer({
 	fileFilter: function (req, file, cb){ 
 	
 		// Set the filetypes, it is optional 
-		var filetypes = /jpeg|jpg|png/; 
+		var filetypes = /jpeg|jpg|png|pdf/; 
 		var mimetype = filetypes.test(file.mimetype); 
 
 		var extname = filetypes.test(path.extname( 
@@ -70,7 +70,7 @@ ap.post("/uploadresume",function (req, res, next) {
 		} 
 		else { 
 
-			res.send("Success, Resume uploaded!") 
+			res.send("Processing...") 
 		} 
 	}) 
 }) 
